@@ -33,7 +33,7 @@ services:
     environment:
       - REDIS_PASSWORD=pass_obilet
       - REDIS_DATABASE=db_obilet
-    volumes:
+    #volumes:
       #- /Users/talhabuyukkose/Desktop/Projects/Interviews/Obilet/DockerVolume:/data/
 
   jaeger:
@@ -49,9 +49,7 @@ services:
       - OTEL_EXPORTER_JAEGER_AGENT_PORT=6831
       - OTEL_EXPORTER_JAEGER_ENDPOINT=http://jaeger:14268/api/traces
       - OTEL_EXPORTER_JAEGER_PROTOCOL=udp/thrift.compact
-
-networks:
-  jaeger-example:
+    
 ```
 
 Run the following command to start the Redis server using Docker:
