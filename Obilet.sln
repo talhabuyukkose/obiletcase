@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CFB074BD-4BE7-405A-BB98-A84E76DFD4BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{BF190A00-3574-4C05-8139-DAAC1BB9AD6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{1F87A47D-41F8-43D0-8BAA-F5EA87BD7672}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obilet.WebApp", "src\Presentation\Obilet.WebApp\Obilet.WebApp.csproj", "{EC4F741A-34E9-4FC5-BAF5-0C23AA0B7640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obilet.Infrastructure", "src\Libraries\Obilet.Infrastructure\Obilet.Infrastructure.csproj", "{62C116F6-B382-4C84-BB46-CE453B659287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obilet.Core", "src\Libraries\Obilet.Core\Obilet.Core.csproj", "{1D8020EA-A6A9-4020-B9BA-16172A42AB10}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC4F741A-34E9-4FC5-BAF5-0C23AA0B7640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4F741A-34E9-4FC5-BAF5-0C23AA0B7640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4F741A-34E9-4FC5-BAF5-0C23AA0B7640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4F741A-34E9-4FC5-BAF5-0C23AA0B7640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C116F6-B382-4C84-BB46-CE453B659287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C116F6-B382-4C84-BB46-CE453B659287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C116F6-B382-4C84-BB46-CE453B659287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C116F6-B382-4C84-BB46-CE453B659287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D8020EA-A6A9-4020-B9BA-16172A42AB10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D8020EA-A6A9-4020-B9BA-16172A42AB10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D8020EA-A6A9-4020-B9BA-16172A42AB10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D8020EA-A6A9-4020-B9BA-16172A42AB10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB0B1767-D3E4-4C94-80FD-DB93C3AF1931}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BF190A00-3574-4C05-8139-DAAC1BB9AD6D} = {CFB074BD-4BE7-405A-BB98-A84E76DFD4BD}
+		{1F87A47D-41F8-43D0-8BAA-F5EA87BD7672} = {CFB074BD-4BE7-405A-BB98-A84E76DFD4BD}
+		{EC4F741A-34E9-4FC5-BAF5-0C23AA0B7640} = {1F87A47D-41F8-43D0-8BAA-F5EA87BD7672}
+		{62C116F6-B382-4C84-BB46-CE453B659287} = {BF190A00-3574-4C05-8139-DAAC1BB9AD6D}
+		{1D8020EA-A6A9-4020-B9BA-16172A42AB10} = {BF190A00-3574-4C05-8139-DAAC1BB9AD6D}
+	EndGlobalSection
+EndGlobal

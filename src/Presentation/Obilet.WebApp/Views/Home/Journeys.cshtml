@@ -1,0 +1,67 @@
+@model IReadOnlyList<Obilet.Core.Models.ObiletApiModel.BusJourneyModels.BusJourney>
+
+@{
+    
+    ViewBag.Title = "Obilet Seferler";
+    Layout = "_Layout";
+}
+<p>@ViewBag.ErrorMessage</p>
+<div class="d-flex justify-content-start">
+    <a type="button" asp-action="Index" class="btn btn-danger mb-1">
+        Ana Sayfa
+    </a>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 px-sm-5-6 mt-2 ">
+
+            @if (Model.Count == 0)
+            {
+                <p class="text-center fs-2">Hiç sefer bulunamadı...</p>
+            }
+            else
+            {
+                foreach (var busJourney in Model)
+                {
+                    <div class="container">
+                        <div class="row shadow-lg p-3 mb-5 bg-body-tertiary rounded-4">
+                            <div class="col-2">
+                                @{
+                                    string path = $"https://s3.eu-central-1.amazonaws.com/static.obilet.com/images/partner/{@busJourney.PartnerId}-sm.png";
+                                    <img src="@path" style="width: 50%"/>
+                                }
+                            </div>
+                            <div class="col-2">
+                                <h5>@busJourney.JourneyDetail.Departure.ToString("HH:mm")</h5>
+                                <br>
+                                @{
+                                    TimeSpan timeSpan = busJourney.JourneyDetail.Arrival - busJourney.JourneyDetail.Departure;
+                                    <p>( @timeSpan.Hours Saat @(timeSpan.Minutes == 0 ? "" : $"{@timeSpan.Minutes} Dakika"))*</p>
+                                }
+                            </div>
+                            <div class="col-4">
+                                <p>
+                                    @busJourney.BusType
+                                    <br>
+                                    @busJourney.JourneyDetail.Origin > @busJourney.JourneyDetail.Destination
+                                    <br>
+
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <p>
+                                    @busJourney.JourneyDetail.InternetPrice TL
+                                </p>
+                            </div>
+                            <div class="col-2">
+                                <button class="btn btn-danger w-100">KOLTIUK SEÇ</button>
+                                <span class="text-muted w-100">Son @busJourney.AvailableSeats Koltuk</span>
+                            </div>
+
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
