@@ -1,0 +1,7 @@
+# Recycle Bin used on file shares
+bin/
+obj/
+
+# JetBrains Rider
+.idea/
+*.sln.iml

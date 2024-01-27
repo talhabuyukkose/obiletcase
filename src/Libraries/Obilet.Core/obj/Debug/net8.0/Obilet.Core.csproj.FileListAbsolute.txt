@@ -10,3 +10,16 @@
 /Users/talhabuyukkose/Desktop/Projects/Interviews/Obilet/src/Libraries/Obilet.Core/obj/Debug/net8.0/refint/Obilet.Core.dll
 /Users/talhabuyukkose/Desktop/Projects/Interviews/Obilet/src/Libraries/Obilet.Core/obj/Debug/net8.0/Obilet.Core.pdb
 /Users/talhabuyukkose/Desktop/Projects/Interviews/Obilet/src/Libraries/Obilet.Core/obj/Debug/net8.0/ref/Obilet.Core.dll
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/bin/Debug/net8.0/Obilet.Core.deps.json
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/bin/Debug/net8.0/Obilet.Core.dll
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/bin/Debug/net8.0/Obilet.Core.pdb
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/obj/Debug/net8.0/Obilet.Core.csproj.AssemblyReference.cache
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/obj/Debug/net8.0/Obilet.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/obj/Debug/net8.0/Obilet.Core.AssemblyInfoInputs.cache
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/obj/Debug/net8.0/Obilet.Core.AssemblyInfo.cs
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/obj/Debug/net8.0/Obilet.Core.csproj.CoreCompileInputs.cache
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/obj/Debug/net8.0/Obilet.Core.sourcelink.json
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/obj/Debug/net8.0/Obilet.Core.dll
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/obj/Debug/net8.0/refint/Obilet.Core.dll
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/obj/Debug/net8.0/Obilet.Core.pdb
+/Users/talhabuyukkose/Repos/Github/obiletcase/src/Libraries/Obilet.Core/obj/Debug/net8.0/ref/Obilet.Core.dll

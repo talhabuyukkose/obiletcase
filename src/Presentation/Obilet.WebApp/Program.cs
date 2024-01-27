@@ -1,6 +1,5 @@
 using Obilet.Core;
 using Obilet.Infrastructure;
-using Obilet.WebApp.Infrastructtures;
 
 var builder = WebApplication.CreateBuilder(args);
 
