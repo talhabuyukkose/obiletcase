@@ -1,5 +1,6 @@
 using Obilet.Core;
 using Obilet.Infrastructure;
+using Obilet.WebApp.Infrastructtures;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +11,8 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddInfrastructureConfigureService(builder.Configuration, builder.Environment,builder.Logging);
 builder.Services.AddCoreConfigureService(builder.Configuration);
 
-// builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
-// builder.Services.AddProblemDetails();
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 
 var app = builder.Build();
 

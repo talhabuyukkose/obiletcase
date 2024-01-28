@@ -1,3 +1,4 @@
+using System;
 using System.Text.Json.Serialization;
 
 namespace Obilet.Core.Models.ObiletApiModel.BusJourneyModels;

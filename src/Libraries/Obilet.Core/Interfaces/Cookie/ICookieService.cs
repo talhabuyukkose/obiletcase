@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Http;
-
 namespace Obilet.Core.Interfaces;
 
 public interface ICookieService<T>

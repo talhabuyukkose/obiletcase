@@ -8,11 +8,9 @@ using Obilet.Core.Settings;
 using Obilet.Infrastructure.Services.Cookie;
 using Obilet.Infrastructure.Services.DistrubitedCaching;
 using Obilet.Infrastructure.Services.Obilet;
-using OpenTelemetry.Logs;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
-using StackExchange.Redis;
 
 namespace Obilet.Infrastructure;
 

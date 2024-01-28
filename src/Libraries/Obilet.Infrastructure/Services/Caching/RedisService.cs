@@ -1,7 +1,7 @@
+using System;
 using System.Text.Json;
 using Microsoft.Extensions.Caching.Distributed;
 using Obilet.Core.Interfaces;
-using StackExchange.Redis;
 
 namespace Obilet.Infrastructure.Services.DistrubitedCaching;
 

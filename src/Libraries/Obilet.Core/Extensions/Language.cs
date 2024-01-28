@@ -1,5 +1,3 @@
-using System.Diagnostics;
-
 namespace Obilet.Core.Extensions;
 
 /// <summary>

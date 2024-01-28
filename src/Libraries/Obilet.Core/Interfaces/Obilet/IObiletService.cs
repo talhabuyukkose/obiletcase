@@ -3,7 +3,6 @@ using Obilet.Core.Models.ObiletApiModel.BusJourneyModels;
 using Obilet.Core.Models.ObiletApiModel.BusJourneyModels.Responses;
 using Obilet.Core.Models.ObiletApiModel.BusLocationModels.Responses;
 using Obilet.Core.Models.ObiletApiModel.SessionModels;
-using Obilet.Core.Models.ObiletApiModel.SessionModels.Requests;
 using Obilet.Core.Models.ObiletApiModel.SessionModels.Responses;
 
 namespace Obilet.Core.Interfaces;
