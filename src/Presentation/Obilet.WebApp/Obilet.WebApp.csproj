@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\Libraries\Obilet.Core\Obilet.Core.csproj" />
       <ProjectReference Include="..\..\Libraries\Obilet.Infrastructure\Obilet.Infrastructure.csproj" />
     </ItemGroup>
 

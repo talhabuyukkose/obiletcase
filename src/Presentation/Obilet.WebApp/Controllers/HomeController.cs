@@ -39,16 +39,19 @@ public class HomeController : Controller
         busJourneySearchModel.DepartureDate = busJourneySearchModel.DepartureDate <= DateTime.Today ? DateTime.Today.AddDays(1) : busJourneySearchModel.DepartureDate;
 
         ViewBag.busJourneySearchCookie = busJourneySearchModel;
-
+        _logger.LogInformation("Ana sayfa yüklendi");
         return View(await _busLocationService.GetBusLocationWithTakeAsync(ApiServiceConstant.TakeCount));
     }
 
     [HttpPost]
     public async Task<IActionResult> SearchLocations(string searchvalue)
     {
+        _logger.LogInformation("Location aranıyor");
         if (string.IsNullOrEmpty(searchvalue))
             return Json(await _busLocationService.GetBusLocationWithTakeAsync(ApiServiceConstant.TakeCount));
+        _logger.LogInformation("Location bulundu");
 
+       
         return Json(await _busLocationService.GetBusLocationSearchAsync(searchvalue));
     }
 
@@ -57,11 +60,12 @@ public class HomeController : Controller
     public async Task<IActionResult> Journeys(IFormCollection formCollection)
     {
         var originName = formCollection["originName"];
+        throw new  ArgumentNullException(nameof(originName));
         int.TryParse(formCollection["originId"], out int originId);
         var destinationName = formCollection["destinationName"];
         int.TryParse(formCollection["destinationId"], out int destinationId);
         var departureDate = DateTime.Parse(formCollection["departureDate"]);
-        
+
         if (originName == destinationName)
             return RedirectToAction("Index", "Home");
 
@@ -85,10 +89,12 @@ public class HomeController : Controller
 
         var busJourneyList = await _busJourneysService.GetBusJourneysAsync(busJourneySearch);
 
+
+        _logger.LogInformation("Otobüs seferleri listelendi OriginID : {@originId} , DestinationId : {@destinationId}",originId,destinationId);
         return View(busJourneyList);
     }
 
-  
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
@@ -101,7 +107,7 @@ public class HomeController : Controller
         }
 
         if (exceptipnFeature is RedisException)
-        { 
+        {
             TempData["ExceptionMessage"] = "Teknik bir arıza oluştu lütfen sonra tekrar deneyiniz.";
             return RedirectToAction("Index");
         }
@@ -110,9 +116,8 @@ public class HomeController : Controller
         {
             TempData["ExceptionMessage"] = "Teknik bir arıza oluştu lütfen sonra tekrar deneyiniz.";
             return RedirectToAction("Index");
-
         }
-        
+
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 }
