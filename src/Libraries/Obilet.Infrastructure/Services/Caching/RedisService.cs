@@ -1,7 +1,9 @@
-using System;
+using System.Diagnostics;
 using System.Text.Json;
 using Microsoft.Extensions.Caching.Distributed;
+using Obilet.Core.Extensions;
 using Obilet.Core.Interfaces;
+using StackExchange.Redis;
 
 namespace Obilet.Infrastructure.Services.DistrubitedCaching;
 
@@ -46,6 +48,8 @@ public class RedisService<T>(IDistributedCache distributedCache) : IRedisService
     /// <returns> Return value on generic type</returns>
     public async Task<T> GetStringAsync(string key)
     {
+        using var activity = ActivitySourceProvider.Source.StartActivity();
+        
         var cacheValue = await distributedCache.GetStringAsync(key: key) ?? string.Empty;
 
         return JsonSerializer.Deserialize<T>(cacheValue) ?? default;
